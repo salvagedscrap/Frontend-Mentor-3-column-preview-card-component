@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    margin: 20rem auto;
+    border-radius:11px;
+    overflow: hidden;
+    
+}
+.header-2{
+    font-size: 3.2rem;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin: 5rem 0;
+}
+
+.btn{
+    border: 1px solid hsl(0, 0%, 95%);
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 2.5rem;
+    padding: 1rem 2.4rem;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    transition: all .4s ;
+   
+  
+}
+.btn--sedan{
+    color: hsl(31, 77%, 52%); 
+
+}
+.btn--suv{
+    color:hsl(184, 100%, 22%); 
+
+}
+.btn--lux{
+   color: hsl(179, 100%, 13%); 
+
+}
+.btn--lux:hover,
+.btn--sedan:hover,
+.btn--suv:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+.container-text{
+    font-size: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    letter-spacing: .6px;
+    margin-bottom: 10rem;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+
+}
+.suv{
+    background-color:hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    
+}
+.sedan,
+.suv,
+.luxury{
+    padding: 2rem 5rem;
+    position:relative;
+}
+
+
+@media (max-width:68.75em){
+    
+html{
+    font-size: 58%;
+}
+
+}
+@media (max-width:62.75em){
+    
+    html{
+        font-size: 55%;
+    }
+    .container{
+        width: 90%;
+    }
+
+    .sedan,
+    .suv,
+    .luxury{
+    padding: 1rem 3rem;
+    position:relative;
+    }
+    
+    }
+
+    @media (max-width:40em){
+    
+        html{
+            font-size: 50%;
+        }
+        .container{
+            width: 60%;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
+    
+        
+        
+        }
+    
+
+        @media (max-width:25em){
+    
+            html{
+                font-size: 50%;
+            }
+            .container{
+                width: 80%;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
+        
+            
+            
+            }
